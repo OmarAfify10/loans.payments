@@ -9,7 +9,8 @@ In this Project we develop a model that can predict whether a new borrower will 
 To execute the Project use the binder badge above and follow the instructions in the code to run it .
 
 # Result
-we created a model with very low loss value , the new customer data will be fed to the model to make the prediction , wether the customer will pay the loan in the future or not 
+ The new customer data will be fed to the model to make the prediction , wether the customer will pay the loan in the future or not .
+ 
 input_data = tf.convert_to_tensor(new_customer.values.reshape(1, 78), dtype=tf.float32)
 predictions = model.predict(input_data)
 predicted_class = np.argmax(predictions)
